@@ -2,7 +2,7 @@
     "name": "swag/plugin-testing",
     "description": "Plugin with testsuite",
     "version": "v1.0.0",
-    "type": "shopware-plugin",
+    "type": "shopware-platform-plugin",
     "license": "MIT",
     "authors": [
         {
@@ -13,7 +13,7 @@
         "shopware/platform": "dev-master"
     },
     "extra": {
-        "installer-name": "PluginTesting",
+        "shopware-plugin-class": "Swag\\PluginTesting\\PluginTesting",
         "label": {
             "de_DE": "Plugin mit einer Testsuite",
             "en_GB": "Plugin with testsuite"
@@ -21,6 +21,11 @@
         "description": {
             "de_DE": "Plugin mit einer Testsuite",
             "en_GB": "Plugin with testsuite"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Swag\\PluginTesting\\": "src/"
         }
     }
 }
