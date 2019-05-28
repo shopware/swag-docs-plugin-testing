@@ -15,12 +15,12 @@
     "extra": {
         "shopware-plugin-class": "Swag\\PluginTesting\\PluginTesting",
         "label": {
-            "de-DE": "Plugin mit einer Testsuite",
-            "en-GB": "Plugin with testsuite"
+            "de-DE": "Label für das Plugin PluginTesting",
+            "en-GB": "Label for the plugin PluginTesting"
         },
         "description": {
-            "de-DE": "Plugin mit einer Testsuite",
-            "en-GB": "Plugin with testsuite"
+            "de-DE": "Beschreibung für das Plugin PluginTesting",
+            "en-GB": "Description for the plugin PluginTesting"
         }
     },
     "autoload": {
