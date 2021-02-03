@@ -17,7 +17,10 @@ class UsedClassesAvailableTest extends TestCase
         $pluginClasses = $this->getPluginClasses();
 
         foreach ($pluginClasses as $class) {
-            $classRelativePath = str_replace(['.php', '/'], ['', '\\'], $class->getRelativePathname());
+            $path = explode(DIRECTORY_SEPARATOR, $class->getRelativePathname());
+            unset($path[0]); // src folder
+
+            $classRelativePath = str_replace(['.php', '/'], ['', '\\'], implode(DIRECTORY_SEPARATOR, $path));
 
             if (class_exists($namespace . '\\' . $classRelativePath)) {
                 $counter += 1;
